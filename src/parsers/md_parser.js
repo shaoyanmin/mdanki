@@ -78,8 +78,9 @@ Prism.languages.rb = Prism.languages.ruby;
 class MdParser extends BaseParser {
   constructor(options) {
     super(options);
-    this.initMarked();
     this.renderer = new marked.Renderer();
+    this.renderer.image = (href, title, text) => `<ruby>${text}<rp>(</rp><rt>${href}</rt><rp>)</rp></ruby>`;
+    this.initMarked();
   }
 
   /**

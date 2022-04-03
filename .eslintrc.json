@@ -18,6 +18,7 @@
         "key-spacing": ["error", { "align": "colon" }],
         "no-await-in-loop": "off",
         "no-restricted-syntax": "off",
+        "linebreak-style": "off",
         "no-multi-spaces": ["error", {
             "exceptions": {
                 "VariableDeclarator": true,
